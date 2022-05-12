@@ -21,7 +21,6 @@ namespace KafeBerlin.Data
         public List<SiparisDetay> SiparisDetaylar { get; set; }
 
         public string ToplamTutarTL { get;  }
-        public string ToplamTutar2TL { get;  }
 
         public decimal ToplamTutar()
         {
