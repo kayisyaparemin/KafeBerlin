@@ -16,6 +16,8 @@ namespace KafeBerlin.Data
 
         public string TutarTL { get; }
 
+        public int deneme { get; set; }
+
         public decimal Tutar()
         {
             return 0;
