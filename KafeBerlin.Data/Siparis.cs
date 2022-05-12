@@ -22,6 +22,8 @@ namespace KafeBerlin.Data
 
         public string ToplamTutarTL { get;  }
 
+        public List<decimal> Fiyatlar { get; set; }
+
         public decimal ToplamTutar()
         {
             return 0;
