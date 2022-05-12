@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KafeBerlin.Ui", "KafeBerlin.Ui\KafeBerlin.Ui.csproj", "{02FFD37E-F6A1-4837-8059-BCBD3E500589}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KafeBerlin.Data", "KafeBerlin.Data\KafeBerlin.Data.csproj", "{3E7914C1-F8F4-4F14-8516-BB96CFC51162}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02FFD37E-F6A1-4837-8059-BCBD3E500589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02FFD37E-F6A1-4837-8059-BCBD3E500589}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02FFD37E-F6A1-4837-8059-BCBD3E500589}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02FFD37E-F6A1-4837-8059-BCBD3E500589}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E7914C1-F8F4-4F14-8516-BB96CFC51162}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E7914C1-F8F4-4F14-8516-BB96CFC51162}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E7914C1-F8F4-4F14-8516-BB96CFC51162}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E7914C1-F8F4-4F14-8516-BB96CFC51162}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2911B312-6D30-4119-BD34-D0430AB897C2}
+	EndGlobalSection
+EndGlobal
