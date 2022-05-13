@@ -30,15 +30,15 @@
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dvgSiparisler = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvDetaylar = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgSiparisler)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetaylar)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -51,12 +51,12 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.Controls.Add(this.label1);
-            this.splitContainer1.Panel1.Controls.Add(this.dataGridView1);
+            this.splitContainer1.Panel1.Controls.Add(this.dvgSiparisler);
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.label2);
-            this.splitContainer1.Panel2.Controls.Add(this.dataGridView2);
+            this.splitContainer1.Panel2.Controls.Add(this.dgvDetaylar);
             this.splitContainer1.Size = new System.Drawing.Size(811, 633);
             this.splitContainer1.SplitterDistance = 299;
             this.splitContainer1.TabIndex = 0;
@@ -71,14 +71,14 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Siparişler";
             // 
-            // dataGridView1
+            // dvgSiparisler
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 41);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(811, 258);
-            this.dataGridView1.TabIndex = 0;
+            this.dvgSiparisler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvgSiparisler.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dvgSiparisler.Location = new System.Drawing.Point(0, 41);
+            this.dvgSiparisler.Name = "dvgSiparisler";
+            this.dvgSiparisler.Size = new System.Drawing.Size(811, 258);
+            this.dvgSiparisler.TabIndex = 0;
             // 
             // label2
             // 
@@ -90,14 +90,14 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Sipariş Detayları";
             // 
-            // dataGridView2
+            // dgvDetaylar
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView2.Location = new System.Drawing.Point(0, 43);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(811, 287);
-            this.dataGridView2.TabIndex = 0;
+            this.dgvDetaylar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDetaylar.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgvDetaylar.Location = new System.Drawing.Point(0, 43);
+            this.dgvDetaylar.Name = "dgvDetaylar";
+            this.dgvDetaylar.Size = new System.Drawing.Size(811, 287);
+            this.dgvDetaylar.TabIndex = 0;
             // 
             // GecmisSiparislerForm
             // 
@@ -113,8 +113,8 @@
             this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgSiparisler)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetaylar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -123,8 +123,8 @@
 
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dvgSiparisler;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgvDetaylar;
     }
 }

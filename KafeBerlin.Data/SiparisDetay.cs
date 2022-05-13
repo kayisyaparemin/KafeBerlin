@@ -14,13 +14,11 @@ namespace KafeBerlin.Data
 
         public int Adet { get; set; }
 
-        public string TutarTL { get; }
-
-        public int deneme { get; set; }
+        public string TutarTL => $"{Tutar():c2}";
 
         public decimal Tutar()
         {
-            return 0;
+            return BirimFiyat * Adet;
         }
     }
 }
