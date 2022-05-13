@@ -81,9 +81,19 @@
             // nudAdet
             // 
             this.nudAdet.Location = new System.Drawing.Point(261, 39);
+            this.nudAdet.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.nudAdet.Name = "nudAdet";
             this.nudAdet.Size = new System.Drawing.Size(120, 29);
             this.nudAdet.TabIndex = 2;
+            this.nudAdet.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // btnEkle
             // 
@@ -93,6 +103,7 @@
             this.btnEkle.TabIndex = 3;
             this.btnEkle.Text = "EKLE";
             this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // cboMasaNo
             // 
@@ -113,9 +124,14 @@
             // 
             // dgvDetaylar
             // 
+            this.dgvDetaylar.AllowUserToAddRows = false;
+            this.dgvDetaylar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDetaylar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetaylar.Location = new System.Drawing.Point(12, 78);
             this.dgvDetaylar.Name = "dgvDetaylar";
+            this.dgvDetaylar.ReadOnly = true;
+            this.dgvDetaylar.RowHeadersVisible = false;
+            this.dgvDetaylar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDetaylar.Size = new System.Drawing.Size(550, 518);
             this.dgvDetaylar.TabIndex = 4;
             // 

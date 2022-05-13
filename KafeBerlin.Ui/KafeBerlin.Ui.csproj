@@ -106,5 +106,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KafeBerlin.Data\KafeBerlin.Data.csproj">
+      <Project>{3e7914c1-f8f4-4f14-8516-bb96cfc51162}</Project>
+      <Name>KafeBerlin.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
