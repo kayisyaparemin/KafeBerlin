@@ -13,7 +13,7 @@ namespace KafeBerlin.Ui
 {
     public partial class AnaForm : Form
     {
-        KafeVeri db = new KafeVeri();
+        public static KafeVeri db = new KafeVeri();
         
         public AnaForm()
         {
@@ -21,6 +21,8 @@ namespace KafeBerlin.Ui
             MasalariYukle();
             OrnekUrunleriYukle();
         }
+
+        
 
         private void OrnekUrunleriYukle()
         {
@@ -51,6 +53,11 @@ namespace KafeBerlin.Ui
                 lvi.ImageKey = "dolu";
             }
             new SiparisForm(db,siparis).ShowDialog();
+        }
+
+        private void tsmiUrunler_Click(object sender, EventArgs e)
+        {
+            new UrunlerForm().ShowDialog();
         }
     }
 }
