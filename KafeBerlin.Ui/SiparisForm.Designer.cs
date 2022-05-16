@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.cboUrun = new System.Windows.Forms.ComboBox();
             this.lblMasaNo = new System.Windows.Forms.Label();
@@ -37,6 +37,10 @@
             this.cboMasaNo = new System.Windows.Forms.ComboBox();
             this.btnTasi = new System.Windows.Forms.Button();
             this.dgvDetaylar = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -44,10 +48,6 @@
             this.btnSiparisIptal = new System.Windows.Forms.Button();
             this.btnOdemeAl = new System.Windows.Forms.Button();
             this.btnAnaSayfayaDon = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.nudAdet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetaylar)).BeginInit();
             this.SuspendLayout();
@@ -67,7 +67,7 @@
             this.cboUrun.FormattingEnabled = true;
             this.cboUrun.Location = new System.Drawing.Point(19, 36);
             this.cboUrun.Name = "cboUrun";
-            this.cboUrun.Size = new System.Drawing.Size(227, 32);
+            this.cboUrun.Size = new System.Drawing.Size(335, 32);
             this.cboUrun.TabIndex = 1;
             // 
             // lblMasaNo
@@ -85,7 +85,7 @@
             // 
             // nudAdet
             // 
-            this.nudAdet.Location = new System.Drawing.Point(261, 39);
+            this.nudAdet.Location = new System.Drawing.Point(360, 37);
             this.nudAdet.Minimum = new decimal(new int[] {
             1,
             0,
@@ -102,9 +102,9 @@
             // 
             // btnEkle
             // 
-            this.btnEkle.Location = new System.Drawing.Point(397, 36);
+            this.btnEkle.Location = new System.Drawing.Point(486, 33);
             this.btnEkle.Name = "btnEkle";
-            this.btnEkle.Size = new System.Drawing.Size(102, 36);
+            this.btnEkle.Size = new System.Drawing.Size(123, 38);
             this.btnEkle.TabIndex = 3;
             this.btnEkle.Text = "EKLE";
             this.btnEkle.UseVisualStyleBackColor = true;
@@ -145,10 +145,41 @@
             this.dgvDetaylar.Size = new System.Drawing.Size(550, 518);
             this.dgvDetaylar.TabIndex = 4;
             // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "UrunAd";
+            this.Column1.HeaderText = "Ürün";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "BirimFiyat";
+            dataGridViewCellStyle2.Format = "C2";
+            dataGridViewCellStyle2.NullValue = null;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Column2.HeaderText = "Birim Fiyat";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Adet";
+            this.Column3.HeaderText = "Adet";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "TutarTL";
+            this.Column4.HeaderText = "Tutar";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(257, 9);
+            this.label3.Location = new System.Drawing.Point(356, 7);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 24);
@@ -222,37 +253,6 @@
             this.btnAnaSayfayaDon.Text = "ANA SAYFAYA DÖN";
             this.btnAnaSayfayaDon.UseVisualStyleBackColor = false;
             this.btnAnaSayfayaDon.Click += new System.EventHandler(this.btnAnaSayfayaDon_Click);
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "UrunAd";
-            this.Column1.HeaderText = "Ürün";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "BirimFiyat";
-            dataGridViewCellStyle4.Format = "C2";
-            dataGridViewCellStyle4.NullValue = null;
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Column2.HeaderText = "Birim Fiyat";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "Adet";
-            this.Column3.HeaderText = "Adet";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "TutarTL";
-            this.Column4.HeaderText = "Tutar";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
             // 
             // SiparisForm
             // 
