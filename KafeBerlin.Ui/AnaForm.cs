@@ -13,7 +13,7 @@ namespace KafeBerlin.Ui
 {
     public partial class AnaForm : Form
     {
-        public static KafeVeri db = new KafeVeri();
+        KafeVeri db = new KafeVeri();
         
         public AnaForm()
         {
@@ -52,12 +52,19 @@ namespace KafeBerlin.Ui
                 db.AktifSiparisler.Add(siparis);
                 lvi.ImageKey = "dolu";
             }
-            new SiparisForm(db,siparis).ShowDialog();
+           DialogResult dr =  new SiparisForm(db,siparis).ShowDialog();
+
+            if (dr == DialogResult.OK)
+                lvi.ImageKey = "bos";
+                lvi.Selected = false;
+            
         }
 
         private void tsmiUrunler_Click(object sender, EventArgs e)
         {
-            new UrunlerForm().ShowDialog();
+            new UrunlerForm(db).ShowDialog();
         }
+
+        
     }
 }

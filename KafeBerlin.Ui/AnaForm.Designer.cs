@@ -90,6 +90,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "AnaForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AnaForm";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

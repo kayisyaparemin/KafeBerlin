@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KafeBerlin.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,5 @@ namespace KafeBerlin.Ui
             InitializeComponent();
         }
 
-        
     }
 }

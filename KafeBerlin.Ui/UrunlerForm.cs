@@ -13,8 +13,10 @@ namespace KafeBerlin.Ui
 {
     public partial class UrunlerForm : Form
     {
-        public UrunlerForm()
+        private readonly KafeVeri _db;
+        public UrunlerForm(KafeVeri db)
         {
+            _db = db;
             InitializeComponent();
         }
 
@@ -27,7 +29,7 @@ namespace KafeBerlin.Ui
                     Urun urun = new Urun();
                     urun.UrunAd = txtUrunAd.Text;
                     urun.BirimFiyat = nudBirimFiyat.Value;
-                    AnaForm.db.Urunler.Add(urun);
+                    _db.Urunler.Add(urun);
                     MessageBox.Show("Urun Ekledi");
                 }
                 else
