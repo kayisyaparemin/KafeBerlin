@@ -13,10 +13,26 @@ namespace KafeBerlin.Ui
 {
     public partial class GecmisSiparislerForm : Form
     {
-        public GecmisSiparislerForm()
+        private readonly KafeVeri _db;
+
+        public GecmisSiparislerForm(KafeVeri db)
         {
+            _db = db;
             InitializeComponent();
+            dgvSiparisler.DataSource = _db.GecmisSiparisler;
         }
 
+        private void dgvSiparisler_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvSiparisler.SelectedRows.Count == 0)
+            {
+                dgvDetaylar.DataSource = null;
+            }
+            else
+            {
+                var siparis = (Siparis)dgvSiparisler.SelectedRows[0].DataBoundItem;
+                dgvDetaylar.DataSource = siparis.SiparisDetaylar;
+            }
+        }
     }
 }

@@ -86,7 +86,7 @@ namespace KafeBerlin.Ui
 
         private void btnOdemeAl_Click(object sender, EventArgs e)
         {
-            SiparisKapat(_siparis.OdenenTutar, SiparisDurum.Odendi);
+            SiparisKapat(_siparis.ToplamTutar(), SiparisDurum.Odendi);
         }
         void SiparisKapat(decimal odenenTutar, SiparisDurum durum)
         {
@@ -103,6 +103,7 @@ namespace KafeBerlin.Ui
             {
                 _siparis.OdenenTutar = odenenTutar;
                 _siparis.Durum = durum;
+                _siparis.KapanisZamani = DateTime.Now;
                 _db.AktifSiparisler.Remove(_siparis);
                 _db.GecmisSiparisler.Add(_siparis);
                 DialogResult = DialogResult.OK;
