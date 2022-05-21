@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.cboUrun = new System.Windows.Forms.ComboBox();
             this.lblMasaNo = new System.Windows.Forms.Label();
@@ -126,6 +126,7 @@
             this.btnTasi.TabIndex = 3;
             this.btnTasi.Text = "TAŞI";
             this.btnTasi.UseVisualStyleBackColor = true;
+            this.btnTasi.Click += new System.EventHandler(this.btnTasi_Click);
             // 
             // dgvDetaylar
             // 
@@ -155,9 +156,9 @@
             // Column2
             // 
             this.Column2.DataPropertyName = "BirimFiyat";
-            dataGridViewCellStyle2.Format = "C2";
-            dataGridViewCellStyle2.NullValue = null;
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Format = "C2";
+            dataGridViewCellStyle1.NullValue = null;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle1;
             this.Column2.HeaderText = "Birim Fiyat";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
