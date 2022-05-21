@@ -79,6 +79,19 @@ namespace KafeBerlin.Ui
             dgvUrunler.Enabled = true;
             btnIptal.Hide();
         }
+
+        private void dgvUrunler_UserDeletingRow(object sender, DataGridViewRowCancelEventArgs e)
+        {
+                DialogResult dr = MessageBox.Show(
+                "Seçili ürün silinecektir.Onaylıyor musunuz",
+                $"Ürün Silme Onayı",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning,
+                MessageBoxDefaultButton.Button2
+                );
+                e.Cancel = dr == DialogResult.No;
+
+        }
     }
 }
 
